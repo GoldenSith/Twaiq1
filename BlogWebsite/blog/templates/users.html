@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+  List of All Users
+{% endblock %}
+
+{% block content %}
+  <h1>Users</h1>
+
+    {% for x in myusers %}
+      <tr>
+        <td>{{ x.ID }}</td>
+        <td>{{ x.Username }}</td>
+        <td>{{ x.Email }}</td>
+      </tr><br>
+    {% endfor %}
+
+{% endblock %}

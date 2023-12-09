@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+  Details of {{ mydetail.Title }}
+{% endblock %}
+
+{% block content %}
+<h1>{{ mydetail.Title }}</h1>
+<p>Content : {{ mydetail.Content }}</p>
+<p>Blog Category : {{ mydetail.Category }}</p>
+<p>Date Published : {{ mydetail.Date_published }}</p>
+<p>Go to <a href="/blogs">Blogs</a></p>
+<p>Go to <a href="/comments">Comments</a></p>
+{% endblock %}

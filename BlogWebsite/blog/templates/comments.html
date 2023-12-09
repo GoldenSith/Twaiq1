@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+  Comments
+{% endblock %}
+
+{% block content %}
+  <h1>Comments</h1>
+
+  <ol>
+    {% for x in mycomment %}
+      <li><a href="blogdetails/{{ x.Post_id.ID }}">Post ID is: {{x.Post_id.ID}}  </a> and the comment is : {{ x.Content }}</li><br>
+      <H1>{{x.post_id.Title}}</H1>
+    {% endfor %}
+  </ol>
+{% endblock %}
